@@ -1,4 +1,4 @@
-# Copyright (C) 1992-2016, 2018, 2020 Free Software Foundation, Inc.
+# Copyright (C) 1992-2016, 2018, 2020, 2023 Free Software Foundation, Inc.
 #
 # This file is part of DejaGnu.
 #
@@ -64,7 +64,7 @@ set tests {
 	"Ignoring test foo.exp"
 	"--ignore option" }
     { "-v --objdir xXx"
-	"Using test binaries in xXx"
+	"Using test binaries in xXx.*Testsuite root is"
 	"--objdir option" }
     { "-v --tool xXx"
 	"Testing xXx"

@@ -1,3 +1,9 @@
+2023-04-18  Jacob Bachmeyer  <jcb@gnu.org>
+
+	* testsuite/runtest.main/options.exp: Adjust pattern matched in
+	--objdir test to require the objdir given on the command line to
+	remain in force immediately after the local init file is loaded.
+
 2022-12-20  Jacob Bachmeyer  <jcb@gnu.org>
 
 	* dejagnu.h (totals, TestState::totals): Change "real failed" to
