@@ -31,63 +31,63 @@ runtest_setup_nested_testsuite
 #
 
 set tests {
-    { "--help" "USAGE:*" "Display help" }
-    { "-v -v -v" "Verbose level is 3" "Verbose set correctly" }
-    { "-v --tool xXx"
+    { {--help} "USAGE:*" "Display help" }
+    { {-v -v -v} "Verbose level is 3" "Verbose set correctly" }
+    { {-v --tool xXx}
 	"Found.*nested-init\..*Loading.*utils\.exp"
 	"Loading library files" }
-    { "-v --tool xXx"
+    { {-v --tool xXx}
 	"Expect binary is.*Using.*main test driver"
 	"Loading basic packages" }
-    { "--F --tool x"
+    { {--F --tool x}
 	"Illegal Argument \"--F\""
 	"Bad argument" }
-    { "--tool x"
+    { {--tool x}
 	"Couldn't find tool init file"
 	"Bad tool name" }
-    { "-v --target m68k-vxworks"
+    { {-v --target m68k-vxworks}
 	"Target is m68k-vxworks"
 	"--target option" }
-    { "-v --target_board flash"
+    { {-v --target_board flash}
 	"Running target flash"
 	"--target_board option" }
-    { "-v --host sparc-sun-sunos4.1.9"
+    { {-v --host sparc-sun-sunos4.1.9}
 	"Native configuration is sparc-sun-sunos4.1.9"
 	"--host option" }
-    { "-v -a"
+    { {-v -a}
 	"Print all test output to screen"
 	"--all option (short form)" }
-    { "-v --all"
+    { {-v --all}
 	"Print all test output to screen"
 	"--all option" }
-    { "-v --ignore foo.exp"
+    { {-v --ignore foo.exp}
 	"Ignoring test foo.exp"
 	"--ignore option" }
-    { "-v --objdir xXx"
+    { {-v --objdir xXx}
 	"Using test binaries in xXx.*Testsuite root is"
 	"--objdir option" }
-    { "-v --tool xXx"
+    { {-v --tool xXx}
 	"Testing xXx"
 	"--tool option" }
-    { "-v --debug"
+    { {-v --debug}
 	"Expect Debugging is ON"
 	"--debug option" }
-    { "-v --reboot"
+    { {-v --reboot}
 	"Will reboot the target"
 	"--reboot option" }
-    { "-v --strace 1"
+    { {-v --strace 1}
 	"Source Trace level is now 1.* 1  if"
 	"--strace option" }
-    { "-v --D0"
+    { {-v --D0}
 	"Tcl debugger is ON"
 	"--D0 option" }
-    { "-V"
+    { {-V}
 	"DejaGnu version.*Expect version.*Tcl version.*"
 	"-V option" }
-    { "--version"
+    { {--version}
 	"DejaGnu version.*Expect version.*Tcl version.*"
 	"--version option" }
-    { "-v --xml"
+    { {-v --xml}
 	"XML logging turned on"
 	"--xml option" }
 }

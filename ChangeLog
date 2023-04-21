@@ -1,3 +1,8 @@
+2023-04-20  Jacob Bachmeyer  <jcb@gnu.org>
+
+	* testsuite/runtest.main/options.exp: Change argument lists for
+	test cases to conventional Tcl list notation using braces.
+
 2023-04-18  Jacob Bachmeyer  <jcb@gnu.org>
 
 	* testsuite/runtest.main/options.exp: Adjust pattern matched in
