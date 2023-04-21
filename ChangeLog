@@ -1,5 +1,18 @@
 2023-04-20  Jacob Bachmeyer  <jcb@gnu.org>
 
+	PR62982
+
+	Initial report:  Christoph Muellner <christoph.muellner@vrull.eu>
+
+	* runtest.exp (restore_cmd_vars): Fix handling of values
+	containing whitespace, which are treated as multiple-element
+	lists and disrupt the eval implied by uplevel here.
+
+	* testsuite/runtest.main/options.exp: Add PR62982 regression test.
+	Improve tests for --target_board option by checking reported
+	target list instead of relying on actually running targets for
+	which no description file exists.
+
 	* testsuite/runtest.main/options.exp: Change argument lists for
 	test cases to conventional Tcl list notation using braces.
 

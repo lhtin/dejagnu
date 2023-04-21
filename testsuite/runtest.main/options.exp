@@ -49,8 +49,11 @@ set tests {
 	"Target is m68k-vxworks"
 	"--target option" }
     { {-v --target_board flash}
-	"Running target flash"
-	"--target_board option" }
+	"target list is flash"
+	"--target_board option with single target" }
+    { {-v --target_board {flash/ilp32 flash/ilp48 flash/ilp64}}
+	"target list is flash/ilp32 flash/ilp48 flash/ilp64"
+	"--target_board option with multiple targets" }
     { {-v --host sparc-sun-sunos4.1.9}
 	"Native configuration is sparc-sun-sunos4.1.9"
 	"--host option" }
