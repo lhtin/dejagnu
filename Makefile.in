@@ -463,6 +463,7 @@ baseboarddir = $(pkgdatadir)/baseboards
 baseboard_DATA = \
 	baseboards/README \
 	baseboards/aarch64-sim.exp \
+	baseboards/aarch64-sim-linux.exp \
 	baseboards/am33_2.0-libremote.exp \
 	baseboards/androideabi.exp \
 	baseboards/arm-ice.exp \
